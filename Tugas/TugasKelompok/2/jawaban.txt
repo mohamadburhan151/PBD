@@ -1,0 +1,35 @@
+CREATE DATABASE tugas_kelompok;
+
+SHOW DATABASES;
+
+USE tugas_kelompok;
+
+//buat table nasabah
+CREATE TABLE nasabah(
+  nomor_induk INT(20) NOT NULL PRIMARY KEY,
+  nama VARCHAR(55) NOT NULL,
+  alamat TEXT(255) NOT NULL
+);
+
+//buat table rekening
+CREATE TABLE rekening(
+  no_rekekning INT(20) NOT NULL PRIMARY KEY,
+  jenis VARCHAR(55) NOT NULL,
+  saldo INT(25)
+);
+
+//buat table pinjaman
+CREATE TABLE pinjaman(
+  no_pinjaman INT(20) NOT NULL PRIMARY KEY,
+  jumlah_pinjaman INT(25)
+);
+
+//isi table nasabah
+LOAD DATA INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\nasabah.txt'
+INTO TABLE nasabah
+LINES TERMINATED BY '\r\n';
+
+//isi table nasabah
+LOAD DATA INFILE 'D:\Program Files\Semester4\PBD\Tugas\TugasKelompok\nasabah.txt'
+INTO TABLE nasabah
+LINES TERMINATED BY '\r\n';
