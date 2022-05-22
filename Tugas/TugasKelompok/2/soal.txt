@@ -9,34 +9,6 @@
 2. Terdapat update proses bisnis demikian (lakukan perubahan rancangan ERD):
   a. setiap peminjam harus memiliki rekening di bank tersebut.
   b. peminjaman memiliki tanggal peminjaman dan tanggal jatuh tempo.
-  c. Tanggal pinjam tidak boleh lebih besar dari pada tanggal jatuh tempo (buat trigger untuk melakukan cek validasi | saat insert ke tabel pinjaman cek field yg terkait, kalau sesuai syarat jalan, kalau tidak sesuai ditolak) Nilai)
-
-3. Lakukan penyesuaian tersebut dalam rancangan tabel fisik, sesuaikan database anda, lalu capture
-tiap tahap. (ingat tentang mengubah constrain dan membuat table, boleh menggunakan data
-baru/menghapus data lama)
-
-4. Lakukan transaksi peminjaman yang tanggalnya pinjamnya melebihi tanggal kembali (mis: tanggal
-pinjam 19 Mei 2022, tanggal jatuh tempo : 18 Mei 2022. Capture query dan hasilnya.
-
-5. Sajikan informasi berikut :
-  a. Berapa total nilai aset dari nasabah yang melakukan peminjaman?
-  b. Berapa total nilai aset dari nasabah per nasabah yang melakukan peminjaman?
-  c. Tampilkan nama, jumlah pinjaman dan tanggal jatuh tempo dari nasabah yang melakukan
-  peminjaman!
-
-Tugas dibuat berkelompok, silakan dikirimkan pada tautan yang telah disediakan pada assignment.
-
-1. Sajikan informasi berikut :
-  a. Tampilkan nama dan alamat para nasabah
-  b. Tampilkan jumlah dana yang berhasil dihimpun oleh bank
-  c. Tampilkan jumlah dana yang dipinjamkan oleh bank
-  d. Tampilkan siapa nama pemilik rekening yang memiliki nilai saldo terbesar!
-  e. Tampilkan jumlah terkecil dari pinjaman!
-  f. Tampilkan jumlah dari rekening yang dimiliki masing-masing nasabah!
-
-2. Terdapat update proses bisnis demikian (lakukan perubahan rancangan ERD):
-  a. setiap peminjam harus memiliki rekening di bank tersebut.
-  b. peminjaman memiliki tanggal peminjaman dan tanggal jatuh tempo.
   c. Tanggal pinjam tidak boleh lebih besar dari pada tanggal jatuh tempo (buat trigger untuk melakukan cek validasi | saat insert ke tabel pinjaman cek field yg terkait, kalau sesuai syarat jalan, kalau tidak sesuai ditolak)
   d. setiap nasabah yang melakukan peminjaman memiliki aset (data aset : id_aset, Jenis_aset, Nilai)
 

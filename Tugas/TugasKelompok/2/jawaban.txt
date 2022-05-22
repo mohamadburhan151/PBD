@@ -13,7 +13,7 @@ CREATE TABLE nasabah(
 
 //buat table rekening
 CREATE TABLE rekening(
-  no_rekening INT(20) NOT NULL PRIMARY KEY,
+  no_rekening BIGINT(30) NOT NULL PRIMARY KEY,
   jenis VARCHAR(55) NOT NULL,
   saldo INT(25)
 );
@@ -22,6 +22,20 @@ CREATE TABLE rekening(
 CREATE TABLE pinjaman(
   no_pinjaman INT(20) NOT NULL PRIMARY KEY,
   jumlah_pinjaman INT(25)
+);
+
+//2.a
+ALTER TABLE pinjaman ADD no_rekening BIGINT(30) NOT NULL;
+
+//2.b
+ALTER TABLE pinjaman ADD tgl_pinjam DATE;
+ALTER TABLE pinjaman ADD tgl_jatuh_tempo DATE;
+
+//2.d
+CREATE TABLE aset(
+  id_aset INT(20) NOT NULL PRIMARY KEY,
+  jenis_aset VARCHAR(30),
+  nilai INT(20)
 );
 
 //isi table nasabah
@@ -34,6 +48,10 @@ LINES TERMINATED BY '\r\n';
 LOAD DATA LOCAL INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\rekening.txt'
 INTO TABLE rekening
 FIELDS TERMINATED BY '\t' ENCLOSED BY '\n'
+LINES TERMINATED BY '\r\n';
+
+LOAD DATA LOCAL INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\rekening.txt'
+INTO TABLE rekening
 LINES TERMINATED BY '\r\n';
 
 //isi table pinjaman
