@@ -25,19 +25,19 @@ CREATE TABLE pinjaman(
 );
 
 //isi table nasabah
-LOAD DATA INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\nasabah.txt'
+LOAD DATA LOCAL INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\nasabah.txt'
 INTO TABLE nasabah
 FIELDS TERMINATED BY '\t' ENCLOSED BY '\n'
 LINES TERMINATED BY '\r\n';
 
 //isi table rekening
-LOAD DATA INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\rekening.txt'
+LOAD DATA LOCAL INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\rekening.txt'
 INTO TABLE rekening
 FIELDS TERMINATED BY '\t' ENCLOSED BY '\n'
 LINES TERMINATED BY '\r\n';
 
 //isi table pinjaman
-LOAD DATA INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\pinjaman.txt'
+LOAD DATA LOCAL INFILE 'D:\\Program Files\\Semester4\\PBD\\Tugas\\TugasKelompok\\2\\pinjaman.txt'
 INTO TABLE pinjaman
 FIELDS TERMINATED BY '\t' ENCLOSED BY '\n'
 LINES TERMINATED BY '\r\n';
